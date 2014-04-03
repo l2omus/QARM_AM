@@ -27,7 +27,7 @@ for t=1:length(sim1_data)-8 % Add probability of 1% that a crash during 8 quarte
                 sim1_data(t+c,j) = sim1_data(t+c,j)- 0.5*std_dev_res(1,2)*corr_sim1(2,j); % The crash impact negatively the expected log excess returns proportionally 
             end                                                                           % to the correlation of each asset to the asset class equity
         end
-        disp('CRASH!!!!!');
+        disp('A crash has been generated!');
     end
 end
 
